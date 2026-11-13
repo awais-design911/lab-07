@@ -1,0 +1,8 @@
+// Rename to CompileErrorDemo.java and run: javac DataBox.java CompileErrorDemo.java
+// It will FAIL to compile, proving type safety.
+public class CompileErrorDemo {
+    public static void main(String[] args) {
+        DataBox<Integer> idBox = new DataBox<>("Ali");   // <-- compile-time error
+        System.out.println(idBox.getValue());
+    }
+}
